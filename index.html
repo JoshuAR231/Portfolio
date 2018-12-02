@@ -18,7 +18,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 </style>
 <body class="w3-black">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
+
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
   
@@ -26,9 +26,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <i class="fa fa-home w3-xxlarge"></i>
     <p>Resume</p>
   </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+  <a href="#prontuario" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
+    <p>Prontuario</p>
   </a>
   <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-eye w3-xxlarge"></i>
@@ -43,22 +43,22 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <p>test</p>
   </a>
 
-</nav>
+</nav>                                                                   <!--Devices version-->
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
+
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
     <a href="#" class="w3-bar-item w3-button" style="width:25% !important">Resume</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#prontuario" class="w3-bar-item w3-button" style="width:25% !important">Prontuario</a>
     <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PHOTOS</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
     <a href="#test"  class="w3-bar-item w3-button" style="width:25% !important" >Tests </a>
   </div>
-</div>
+</div>                                                                <!--Desktop version-->
 
 <!-- Page Content -->                                      <!--use it to hide it when on devices-->
 <div class="w3-padding-large" id="main">                   <!--<span class="w3-hide-small"></span>-->
-  <!-- Header/Home -->
+  
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <p>ID# Y00557819, Ciencias en Comptacion</p><br/>
     <h1 class="w3-jumbo">Joshua Acosta Rolón</h1>
@@ -116,9 +116,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   </header>                                                               <!--Resume-->
 
-  <!-- About Section -->
   
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+  
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="prontuario">
     <h2 class="w3-text-light-grey">Prontuario</h2>
     <hr style="width:200px" class="w3-opacity">
     <h3 class="w3-padding-16 w3-text-light-grey w3-center" ><b>
@@ -206,83 +206,87 @@ paginas interactivas. Requiere 45 horas de conferencia-laboratorio. 3 creditos</
                         <li>Portafolio (A)</li>
                        
 </ol> <li>Evaluación</li>
-<table border="1">
-  <tr bgcolor="gray">
+
+
+<style>
+tr:hover{
+color: black;
+background-color: white;
+}
+td:hover{
+  background-color: aqua;
+}
+tr, td{
+  padding: 10px;
+
+}
+table{
+  border: 1px;
+  
+}
+tr{
+  text-align: center;
+}
+li:hover{
+ background-color: #222;
+ color: aqua;
+
+}
+
+</style>
+<table>
+ 
+  <tr>
       <td>Criterio</td>
       <td>Puntuación</td>
       <td>% de la nota final</td>
   </tr>
-  <tr align="center">
+
+  <tr>
       <td>Examen #1</td>
       <td>100</td>
       <td>30</td>
   </tr>
-  <tr align="center">
+  <tr>
       <td>Examen #2</td>
       <td>100</td>
       <td>30</td>
   </tr>
-  <tr align="center">
+  <tr>
       <td>Examen #3</td>
       <td>100</td>
       <td>30</td>
   </tr>
-  <tr align="center">
+  <tr>
       <td>Asignaciones</td>
       <td>100</td>
       <td>10</td>
   </tr>
-  <tr align="center">
+  <tr>
       <td>Total</td>
       <td>400</td>
       <td>100</td>
   </tr>
 </table>
+
 </div>
-</div>
+</div>                                                                     <!-- Prontuario-->
 
 
 
     
     
     <!-- Grid for pricing tables -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="">
     <h3 class="w3-padding-16 w3-text-light-grey">My Price</h3>
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half w3-margin-bottom">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">5GB Storage</li>
-          <li class="w3-padding-16">Mail Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 10</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
+    <hr style="width:200px" class="w3-opacity">
+    
+     
+        </div>
 
-      <div class="w3-half">
-        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Web Design</li>
-          <li class="w3-padding-16">Photography</li>
-          <li class="w3-padding-16">50GB Storage</li>
-          <li class="w3-padding-16">Endless Support</li>
-          <li class="w3-padding-16">
-            <h2>$ 25</h2>
-            <span class="w3-opacity">per month</span>
-          </li>
-          <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
-          </li>
-        </ul>
-      </div>
+      
     <!-- End Grid/Pricing tables -->
-    </div>
+    
     
     <!-- Testimonials -->
     <h3 class="w3-padding-24 w3-text-light-grey">My Reputation</h3>  
