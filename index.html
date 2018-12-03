@@ -320,10 +320,62 @@ li:hover{
     
     
     <!-- Grid for pricing tables -->
-    <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="">
+    <div class="w3-content w3-justify w3-text-white w3-padding-64" id="">
     <h3 class="w3-padding-16 w3-text-light-grey">Tabla de temperatura</h3>
     <hr style="width:200px" class="w3-opacity">
-    
+    <p id="demo"></p>
+
+<script>
+function kelvin(c){ return c+270 ;}
+function fahrenheit(c){return 9/5*c +32;}
+function rankine(c){return 9/5*c +492 ;}
+function reaumur(c){return 4/5*c;}
+var temp = ["celcious", "kelvin", "fahrenheit","rankine","reaumur","estado"];
+var text = "<table id=customers border= 1 >";
+var i, c;
+for (i = 0; i < temp.length; i++) {
+    text += "<th id=myth>"+ temp[i] + "</th>";
+}
+for(c=-270;c<=200;c +=10)
+{  if(c== 0 )
+      {text += "<tr id=mytr bgcolor=green><td>" + c ;
+       text +="</td><td>"+kelvin(c)+"</td><td>"+fahrenheit(c);
+       text += "</td><td>"+rankine(c)+"</td><td>"+reaumur(c);
+       text +="</td><td><img src='derretido.png' width=40 height=40></td></tr>";
+     }
+   if(c== 100)   
+       {text += "<tr id=mytr bgcolor=green><td>" + c ;
+       text +="</td><td>"+kelvin(c)+"</td><td>"+fahrenheit(c);
+       text += "</td><td>"+rankine(c)+"</td><td>"+reaumur(c);
+       text +="</td><td><img src='evaporar.PNG' width=40 height=40></td></tr>";
+     } //end if
+   else
+     {
+	if(c>=-270 && c<0)
+          {  
+             text += "<tr><td>" + c ;
+             text +="</td><td>"+kelvin(c)+"</td><td>"+fahrenheit(c);
+             text += "</td><td>"+rankine(c)+"</td><td>"+reaumur(c);
+             text +="</td><td><img src=\"solido.png\" width=40 height=40></td></tr>";
+           } 
+       if(c>0 &&c<100)
+         {  
+             text += "<tr><td>" + c ;
+             text +="</td><td>"+kelvin(c)+"</td><td>"+fahrenheit(c);
+             text += "</td><td>"+rankine(c)+"</td><td>"+reaumur(c);
+             text +="</td><td><img src='liquido.png' width=40 height=40></td></tr>";
+         }      
+       if(c>100)
+         {  
+             text += "<tr><td>" + c ;
+             text +="</td><td>"+kelvin(c)+"</td><td>"+fahrenheit(c);
+             text += "</td><td>"+rankine(c)+"</td><td>"+reaumur(c);
+            text +="</td><td><img src=gas.png width=40 height=40></td></tr>";
+         }         
+     }// end else
+ } //end for
+document.getElementById("demo").innerHTML = text +"</table>";
+</script>
      
         </div>
 
